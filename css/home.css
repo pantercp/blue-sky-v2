@@ -321,7 +321,6 @@
 
 .report-grid > div{
     border: 1px solid var(--background);    border-radius: 5px;
-    padding: 1em;
     color: var(--foreground);
 }
 
