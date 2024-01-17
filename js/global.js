@@ -4,7 +4,6 @@ console.log("click")
 
 let darkMode = localStorage.getItem('darkMode');
 
-const LogoIm = document.querySelector('#logoIm');
 const LogoIm2 = document.querySelector('#logoIm2');
 
 const moonIcon = document.querySelector("#moon");
@@ -36,7 +35,6 @@ const enableDarkMode = () => {
   document.body.classList.add('darkmode');
   // 2. Add moon to toggle switch
   activateMoon();
-  LogoIm.src = "media/shams-dark-notext.png"
   LogoIm2.src = "media/shams-dark-notext.png"
   // 3. Update darkMode in localStorage
   localStorage.setItem('darkMode', 'enabled');
@@ -47,7 +45,6 @@ const disableDarkMode = () => {
   document.body.classList.remove('darkmode');
   // 2. Add Sun to toggle switch
   activateSun();
-  LogoIm.src = "media/shams-light-notext.png"
   LogoIm2.src = "media/shams-light-notext.png"
   // 3. Update darkMode in localStorage 
   localStorage.setItem('darkMode', null);

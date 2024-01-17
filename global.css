@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Space Mono', sans-serif;
+    font-family: sans-serif;
     /* font-family: 'Rubik Mono One', 'Space Mono', sans-serif; */
     box-sizing: border-box;
 }
@@ -12,11 +13,11 @@ html {
 
 :root {
     /* Theme Colors */
-    --clr-light: #F1FFFA;
-    --clr-dark: #004e64;
-    --clr-nav: #ebfff8;
+    --clr-light: #fff;
+    --clr-dark: #000;
+    --clr-nav: #fff;
     --clr-accent: #705e57;
-    --clr-accent: #147f8d;
+    --clr-accent: #0a2587;
     --clr-gradient: linear-gradient(138deg, rgb(231, 239, 240) 0%, rgb(204, 217, 217) 40%);
 
     --lightbg: #fff;
@@ -56,10 +57,10 @@ body {
 }
 
 .darkmode {
-    --clr-light: #a499b3;
-    --clr-dark: #1b1725;
-    --clr-accent: #200931;
-    --clr-nav: #534b62;
+    --clr-light: #98b1ba;
+    --clr-dark: #000;
+    --clr-accent: #5373d3;
+    --clr-nav: #02051b;
     --clr-gradient: linear-gradient(138deg, rgba(4, 18, 20, 1) 0%, rgba(0, 0, 0, 1) 40%);
 
     --navigation: var(--clr-nav);
@@ -90,7 +91,7 @@ a {
 .tdnn {
     margin: 0 auto;
     /*change size of toggle with font-size*/
-    font-size: 12%;
+    font-size: 7%;
     position: relative;
     height: var(--toggleHeight);
     width: var(--toggleWidth);
@@ -189,11 +190,18 @@ button.effect.light.slide:focus {
 /* --------Navigation-------- */
 
 #header {
-    border-bottom: 2px solid var(--foreground);
-    background-color: var(--navigation);
-    position: sticky;
+    /* border-bottom: 2px solid var(--foreground); */
+    background-color: transparent;
+    position: fixed;
     top: 0;
     z-index: 99999;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+#header.nav-scrolled {
+    border-bottom: 2px solid var(--foreground);
+    background-color: var(--navigation);
 }
 
 #header nav {
@@ -205,7 +213,7 @@ button.effect.light.slide:focus {
 
 #header img {
     max-height: 100px;
-    padding: 0.75rem;
+    padding: 1.5rem;
 }
 
 #header a {
@@ -221,7 +229,7 @@ button.effect.light.slide:focus {
 }
 
 #header .row-name a {
-    font-size: 2rem;
+    font-size: var(--font-size-lg);
 }
 
 #header .row-menu {
@@ -278,8 +286,12 @@ button.effect.light.slide:focus {
         margin-block-start: 0;
         margin-block-end: 0;
         padding-top: 1rem;
-        background-color: var(--background);
+        background-color: #ffffffde;
         border-bottom: 2px solid;
+    }
+
+    #header.nav-scrolled .row-menu ul.main-pages {
+        background-color: #fff;
     }
 
     #header .row-menu ul.main-pages li {
@@ -310,10 +322,6 @@ button.effect.light.slide:focus {
 
     #header img {
         max-height: 80px;
-    }
-
-    #header .row-name a {
-        font-size: 1.5em;
     }
 
     #header .row-menu.open {
