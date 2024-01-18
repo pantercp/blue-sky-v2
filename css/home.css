@@ -68,7 +68,6 @@
 }
 
 .welcome-section .welcome-content h3 {
-    font-style: italic;
     font-size: var(--font-size-lg);
     margin-block: 1rem;
     text-align: left;
@@ -92,6 +91,10 @@
 }
 
 /* -----Intro Section---- */
+
+.report-section{
+    background-color: var(--light-off);
+}
 
 .report-section h2 {
     font-size: var(--font-size-lg);
@@ -122,12 +125,6 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 5px;
     grid-auto-rows: minmax(175px, auto);
-}
-
-.report-section .report-grid>div {
-    border: 1px solid var(--background);
-    border-radius: 5px;
-    /* background-color: #4070f4; */
 }
 
 .report-grid .text-wrap {
@@ -207,7 +204,7 @@
     text-align: center;
     padding: 1rem;
     border-radius: 0.5rem;
-    border: 1px solid #000;
+    border: 1px solid var(--foreground);
 }
 
 @media only screen and (max-width: 900px) {

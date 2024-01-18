@@ -14,7 +14,8 @@ html {
 :root {
     /* Theme Colors */
     --clr-light: #fff;
-    --clr-dark: #000;
+    --clr-light-off: #f2f2fa;
+    --clr-dark: #020a45;
     --clr-nav: #fff;
     --clr-accent: #705e57;
     --clr-accent: #0a2587;
@@ -24,6 +25,7 @@ html {
 
     --foreground: var(--clr-dark);
     --background: var(--clr-light);
+    --light-off: var(--clr-light-off);
     --navigation: var(--clr-nav);
     --accent: var(--clr-accent);
     --gradient: var(--clr-gradient);
@@ -472,10 +474,6 @@ button.effect.light.slide:focus {
     margin-inline: auto;
     margin-top: 1.5rem;
     border-top: 1px solid var(--foreground);
-}
-
-.footer-section .cjpixel i {
-    color: var(--accent);
 }
 
 @media only screen and (max-width: 700px) {
