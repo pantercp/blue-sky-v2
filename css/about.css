@@ -54,33 +54,69 @@
     margin-inline: auto;
 }
 
+.about-section .section-head{
+    text-align: center;
+    font-size: var(--font-size-xl);
+}
+
 .about-section img{
     max-width: 400px;
+    width: 100%;
+    border-radius: 0.25rem;
 }
 
 .about-section .about-row{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block: 1rem;
+    margin-block: 2rem;
     column-gap: 2rem;
     row-gap: 2rem;
 }
 
 .about-section h2{
     font-size: var(--font-size-lg);
+    margin-bottom: 0.5rem;
 }
 
 .about-section p{
     font-size: var(--font-size-base);
+    text-align: justify;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
 
     .about-section .about-row{
         flex-wrap: wrap;
     }
+
+    .about-section .started-container{
+        flex-wrap: wrap-reverse;
+    }
     
 }
 
+/* ---------Awards Banner------ */
 
+.awards-banner{
+    margin: 2rem auto;
+    padding-inline: 1rem;
+    max-width: 1200px;
+}
+
+.awards-banner h2{
+    text-align: center;
+    font-size: var(--font-size-lg);
+}
+
+.awards-banner .image-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.awards-banner img{
+    padding: 0.5rem;
+    max-width: 300px;
+    width: 33%;
+}
