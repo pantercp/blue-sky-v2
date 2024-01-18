@@ -209,6 +209,11 @@ button.effect.light.slide:focus {
     background-color: var(--navigation);
 }
 
+.darkmode #header.nav-scrolled {
+    border-bottom: 2px solid var(--foreground);
+    background-color: var(--navigation);
+}
+
 #header nav {
     display: flex;
     justify-content: space-between;
