@@ -84,7 +84,7 @@
 
 .welcome-section .welcome-content .text-wrap {
     flex-shrink: 5;
-    text-align: justify;
+    text-align: left;
 }
 
 .welcome-section .welcome-content h3 {
@@ -112,7 +112,7 @@
 
 /* -----Intro Section---- */
 
-.report-section{
+.report-section {
     background-color: var(--light-off);
 }
 
@@ -132,7 +132,8 @@
 
 .report-section .text-wrap p {
     margin-bottom: 0.5rem;
-    text-align: justify;
+    max-width: 450px;
+    text-align: left;
 }
 
 /* ------Report Grid----- */
@@ -143,6 +144,7 @@
     margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(6, 80px) repeat(6, 1fr);
     grid-template-rows: auto 200px;
     gap: 5px;
     grid-auto-rows: minmax(175px, auto);
@@ -157,7 +159,7 @@
     align-items: baseline;
     border: none;
     padding: 0.5rem;
-    padding-right: 2rem;
+    padding-right: 2.5rem;
 }
 
 .report-section .one {
@@ -203,7 +205,10 @@
 @media only screen and (max-width: 900px) {
 
     .report-section .report-grid {
+        grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 1fr 200px 165px;
+        max-width: 700px;
+        padding-bottom: 1rem;
     }
 
     .report-grid .text-wrap {
@@ -211,6 +216,11 @@
         grid-row: 1;
         padding-right: 0.5rem;
     }
+
+    .report-section .text-wrap p {
+        max-width: unset;
+    }
+
 
     .report-section .one {
         grid-column: 1 / 7;
@@ -247,17 +257,17 @@
 
 /* -------Sample Reports------- */
 
-.samples-section{
+.samples-section {
     margin: 2rem 1rem;
     text-align: center;
 }
 
-.samples-section h2{
+.samples-section h2 {
     font-size: var(--font-size-lg);
     margin-block: 2rem;
 }
 
-.samples-section .samples-wrapper{
+.samples-section .samples-wrapper {
     display: flex;
     margin-inline: auto;
     max-width: 1000px;
@@ -268,7 +278,7 @@
     row-gap: 1rem;
 }
 
-.samples-section .sample-content{
+.samples-section .sample-content {
     background-color: var(--light-off);
     padding: 1rem;
     border-radius: 1rem;
@@ -280,12 +290,12 @@
     border: 1px solid var(--foreground);
 }
 
-.samples-section .samples-wrapper i{
+.samples-section .samples-wrapper i {
     font-size: var(--font-size-xl);
     color: var(--foreground);
 }
 
-.samples-section .samples-wrapper i.download{
+.samples-section .samples-wrapper i.download {
     font-size: var(--font-size-lg);
     color: var(--background);
     background-color: var(--foreground);
@@ -293,7 +303,7 @@
     border-radius: 50%;
 }
 
-.samples-section .page-button{
+.samples-section .page-button {
     margin-block: 2rem;
 }
 

@@ -1,3 +1,22 @@
+/* -----Transpead---- */
+
+#header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    border-bottom: none;
+}
+
+
+#header.nav-scrolled {
+    border-bottom: 2px solid var(--foreground);
+    background-color: var(--navigation);
+}
+
+
 .hero-section {
     background-image: url(../media/about-hero.jpg);
     background-size: cover;
@@ -57,6 +76,7 @@
 /* ---------About Section------ */
 
 .about-section .section-head{
+    margin-top: 1rem;
     text-align: center;
     font-size: var(--font-size-xl);
 }
@@ -82,7 +102,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block: 2rem;
     column-gap: 2rem;
     row-gap: 2rem;
 }
@@ -94,7 +113,7 @@
 
 .about-section p{
     font-size: var(--font-size-base);
-    text-align: justify;
+    text-align: left;
 }
 
 .about-section .content-wrapper .text-content{
