@@ -245,6 +245,59 @@
     }
 }
 
+/* -------Sample Reports------- */
+
+.samples-section{
+    margin: 2rem 1rem;
+    text-align: center;
+}
+
+.samples-section h2{
+    font-size: var(--font-size-lg);
+    margin-block: 2rem;
+}
+
+.samples-section .samples-wrapper{
+    display: flex;
+    margin-inline: auto;
+    max-width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 0.5rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.samples-section .sample-content{
+    background-color: var(--light-off);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    border: 1px solid var(--foreground);
+}
+
+.samples-section .samples-wrapper i{
+    font-size: var(--font-size-xl);
+    color: var(--foreground);
+}
+
+.samples-section .samples-wrapper i.download{
+    font-size: var(--font-size-lg);
+    color: var(--background);
+    background-color: var(--foreground);
+    padding: 0.25rem;
+    border-radius: 50%;
+}
+
+.samples-section .page-button{
+    margin-block: 2rem;
+}
+
+
 /* -------Reviews------- */
 
 .reviews-section {
