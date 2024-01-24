@@ -173,9 +173,9 @@
 .report-section .two {
     grid-column: 10 / 13;
     grid-row: 1;
-    background-image: url(../media/bedroom.jpg);
+    background-image: url(../media/IMG005.jpg);
     background-size: cover;
-    background-position: 37% 27%;
+    background-position: 43% 27%;
 }
 
 .report-section .three {
